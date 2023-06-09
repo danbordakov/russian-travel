@@ -11,15 +11,17 @@
 
 <body class="page">
   <header class="header">
-    <img class="header__logo" src="images/logo.png" alt="логотип">
-    <p class="header__lang-link header__lang-link_checked">Ru</p>
-    <p class="header__lang-link">En</p>
+    <img class="header__logo" src="images/logo.png" alt="логотип: карта России">
+    <ul class="header__lang-link">
+      <li><a class="header__lang-link_checked">Ru</a></li>
+      <li><a>En</a></li>
+    </ul>
   </header>
   <main>
     <section class="lead">
       <h1 class="lead__title">Путешествия по России</h1>
       <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-      <img src="images/image.png" alt="карта" class="lead__image">
+      <img src="images/image.png" alt="рисунок маршрута на фоне спящей девушки в поезде" class="lead__image">
       <p class="lead__caption">ваша полка — верхняя</p>
     </section>
     <section class="intro">
@@ -35,35 +37,44 @@
         мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и&nbsp;проехала 20 тысяч километров
         по&nbsp;родной стране. Мы выбрали и&nbsp;описали некоторые интересные места, достойные вашего отпуска.</p>
       <ul class="intro__list">
-        <li>Часовых поясов <span>11</span></li>
-        <li>Объектов природного наследия ЮНЕСКО <span>12</span></li>
-        <li>Объектов культурного наследия ЮНЕСКО <span>16</span></li>
-        <li>Природных заповедников <span>105</span></li>
-        <li>Аэропортов <span>241</span></li>
+        <li>Часовых поясов <span class="intro__list_quantity">11</span></li>
+        <li>Объектов природного наследия ЮНЕСКО <span class="intro__list_quantity">12</span></li>
+        <li>Объектов культурного наследия ЮНЕСКО <span class="intro__list_quantity">16</span></li>
+        <li>Природных заповедников <span class="intro__list_quantity">105</span></li>
+        <li>Аэропортов <span class="intro__list_quantity">241</span></li>
       </ul>
     </section>
-    <div class="photo-grid">
-      <img src="images/photo-grid/photo-grid-train.jpg" alt="поезд" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-atharva-tulsi.jpg" alt="тульси" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-tuman.jpg" alt="туман" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-sochi.jpg" alt="сочи" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-arisa.jpg" alt="ариса" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-baikal.jpg" alt="байкал" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-elbrus.jpg" alt="эльбрус" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-kondratiev.jpg" alt="кондратьев" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-kamchatka-1.jpg" alt="камчатка" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-kamchatka-2.jpg" alt="камчатка" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-baikal-2.jpg" alt="байкал" class="photo-grid__item">
-      <img src="images/photo-grid/photo-grid-ergaki.jpg" alt="эргаки" class="photo-grid__item">
-    </div>
+    <section aria-label="Галерея">
+      <ul class="photo-grid">
+        <li><img src="images/photo-grid/photo-grid-train.jpg" alt="вид из окна поезда" class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-atharva-tulsi.jpg" alt="вид на горы сверху" class="photo-grid__item">
+        </li>
+        <li><img src="images/photo-grid/photo-grid-tuman.jpg" alt="стоги сена и собака в туманном поле"
+            class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-sochi.jpg" alt="горный лес в тумане" class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-arisa.jpg" alt="автомобиль на льду" class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-baikal.jpg" alt="берег озера Байкал" class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-elbrus.jpg" alt="вершины горы Эльбрус" class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-kondratiev.jpg" alt="знак пешеходного перехода на фоне волнорезов"
+            class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-kamchatka-1.jpg" alt="вид сверху на горы Камчатки"
+            class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-kamchatka-2.jpg" alt="вершина Камчатки" class="photo-grid__item">
+        </li>
+        <li><img src="images/photo-grid/photo-grid-baikal-2.jpg" alt="вид сверху на берег озера Байкал"
+            class="photo-grid__item"></li>
+        <li><img src="images/photo-grid/photo-grid-ergaki.jpg" alt="вершины гор в туманной дымке"
+            class="photo-grid__item"></li>
+      </ul>
+    </section>
     <section class="places">
-      <div class="place">
+      <article aria-label="Куршская коса" class="place">
         <h2 class="place__title">Куршская коса</h2>
         <div class="place__website">
-          <p class="place__url-heading">URL</p>
+          <p class="place__url-heading">url</p>
           <a class="place__link" href="http://park-kosa.ru" target="blank">park-kosa.ru</a>
         </div>
-        <img class="place__image" src="images/place-kosa.jpg" alt="коса">
+        <img class="place__image" src="images/place-kosa.jpg" alt="корни деревьев, торчащие из воды">
         <div>
           <p class="place__paragraph">
             Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта —
@@ -78,15 +89,15 @@
             природы и&nbsp;запах стального, прохладного моря.
           </p>
         </div>
-      </div>
-      <div class="place">
+      </article>
+      <article aria-label="Кольский" class="place">
         <h2 class="place__title">Кольский</h2>
         <div class="place__website">
-          <p class="place__url-heading">URL</p>
+          <p class="place__url-heading">url</p>
           <a class="place__link" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
             target="blank">National Geographic</a>
         </div>
-        <img class="place__image" src="images/place-kolsky.jpg" alt="кольский">
+        <img class="place__image" src="images/place-kolsky.jpg" alt="горный массив Кольского полуострова">
         <div>
           <p class="place__paragraph">
             Почти весь полуостров находится за Полярным кругом. Саамская тундра, от&nbsp;которой на
@@ -100,14 +111,14 @@
             в&nbsp;Мурманск.
           </p>
         </div>
-      </div>
-      <div class="place">
+      </article>
+      <article aria-label="Алтай" class="place">
         <h2 class="place__title">Алтай</h2>
         <div class="place__website">
-          <p class="place__url-heading">URL</p>
+          <p class="place__url-heading">url</p>
           <a class="place__link" href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" target="blank">YouTube</a>
         </div>
-        <img class="place__image" src="images/place-altai.jpg" alt="алтай">
+        <img class="place__image" src="images/place-altai.jpg" alt="зеленый лес на Алтае">
         <div>
           <p class="place__paragraph">
             Алтай — одно из красивейших мест в России. В&nbsp;первую очередь из-за гор: если ехать вдоль хребта, вы
@@ -122,14 +133,14 @@
             пасутся косули. И&nbsp;знаменитые манулы — тоже обитатели Алтайского края.
           </p>
         </div>
-      </div>
-      <div class="place">
+      </article>
+      <article aria-label="Зимний Байкал" class="place">
         <h2 class="place__title">Зимний Байкал</h2>
         <div class="place__website">
-          <p class="place__url-heading">URL</p>
+          <p class="place__url-heading">url</p>
           <a class="place__link" href="https://vk.com/baikalmile" target="blank">https://vk.com/baikalmile</a>
         </div>
-        <img class="place__image" src="images/place-winter-baikal.jpg" alt="байкал">
+        <img class="place__image" src="images/place-winter-baikal.jpg" alt="прозрачный лёд Байкала">
         <div>
           <p class="place__paragraph">
             Всем известен Байкал как крупнейшее озеро в&nbsp;мире. Многие также знают, что это самый большой источник
@@ -144,14 +155,14 @@
             «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.
           </p>
         </div>
-      </div>
-      <div class="place">
+      </article>
+      <article aria-label="Карелия" class="place">
         <h2 class="place__title">Карелия</h2>
         <div class="place__website">
-          <p class="place__url-heading">URL</p>
+          <p class="place__url-heading">url</p>
           <a class="place__link" href="http://vodlozero.ru" target="blank">http://vodlozero.ru/</a>
         </div>
-        <img class="place__image" src="images/place-karelia.jpg" alt="карелия">
+        <img class="place__image" src="images/place-karelia.jpg" alt="водоем и лесной массив в Карелии">
         <p class="place__paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская
           лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских
           национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше
@@ -159,20 +170,24 @@
           Грозный.
           В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья
           в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
-      </div>
+      </article>
     </section>
-    <a class="cover" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="blank">
-      <h2 class="cover__title">До Байкала «на собаках»</h2>
-      <p class="cover__subtitle">По мотивам учебной темы о&nbsp;Транссибе — путешествие от&nbsp;столицы до Байкала на
-        электричках.</p>
-    </a>
+    <section aria-label="До Байкала на собаках">
+      <a class="cover" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="blank">
+        <h2 class="cover__title">До Байкала «на собаках»</h2>
+        <p class="cover__subtitle">По мотивам учебной темы о&nbsp;Транссибе — путешествие от&nbsp;столицы до Байкала на
+          электричках.</p>
+      </a>
+    </section>
   </main>
   <footer class="footer">
-    <a href="https://yandex.ru/maps" class="footer__link" target="blank">Карты</a>
-    <a href="https://yandex.ru/pogoda" class="footer__link" target="blank">Погода</a>
-    <a href="https://rasp.yandex.ru" class="footer__link" target="blank">Расписание</a>
-    <a href="https://calendar.yandex.ru" class="footer__link" target="blank">Календарь</a>
-    <a href="https://travel.yandex.ru" class="footer__link" target="blank">Путешествия</a>
+    <nav class="footer__navigation">
+      <a href="https://yandex.ru/maps" class="footer__link" target="blank">Карты</a>
+      <a href="https://yandex.ru/pogoda" class="footer__link" target="blank">Погода</a>
+      <a href="https://rasp.yandex.ru" class="footer__link" target="blank">Расписание</a>
+      <a href="https://calendar.yandex.ru" class="footer__link" target="blank">Календарь</a>
+      <a href="https://travel.yandex.ru" class="footer__link" target="blank">Путешествия</a>
+    </nav>
     <p class="footer__copyright"> &#169; 2023. Даниил Бордаков</p>
   </footer>
 </body>
