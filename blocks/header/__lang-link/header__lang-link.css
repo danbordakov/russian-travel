@@ -1,16 +1,8 @@
 .header__lang-link {
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: #fff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 18px;
-  list-style-type: none;
-  position: relative;
-  top: -5px;
 }
 
 @media screen and (max-width: 767px) {

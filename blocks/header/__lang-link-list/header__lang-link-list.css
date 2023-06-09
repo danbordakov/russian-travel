@@ -1,0 +1,9 @@
+.header__lang-link-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  list-style-type: none;
+  position: relative;
+  top: -5px;
+}
